@@ -138,7 +138,7 @@ is.numeric(all_trips$ride_length)
 # Remove "bad" data
 # The dataframe includes a few hundred entries when bikes were taken out of docks and checked for quality by Divvy or ride_length was negative
 # We will create a new version of the dataframe (v2) since data is being removed
-# https://www.datasciencemadesimple.com/delete-or-drop-rows-in-r-with-conditions-2/
+
 all_trips_v2 <- all_trips[!(all_trips$start_station_name == "HQ QR" | all_trips$ride_length<0),]
 
 ## STEP 4: CONDUCT DESCRIPTIVE ANALYSIS
